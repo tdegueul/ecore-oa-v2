@@ -1,4 +1,4 @@
-package efsm.semantic.abstr;
+package efsm.semantic.algebra;
 
 import fsm.State;
 import fsm.Transition;
