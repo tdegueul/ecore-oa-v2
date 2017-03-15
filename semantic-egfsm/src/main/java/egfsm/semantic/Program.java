@@ -1,8 +1,8 @@
 package egfsm.semantic;
 
 import egfsm.semantic.impl.ExecutableEGFSMAlgebra;
-import egfsm.syntax.Transition;
-import fsm.State;
+import syntax.gfsm.Transition;
+import syntax.fsm.State;
 import syntax.efsm.FSM;
 
 import java.util.Arrays;
@@ -15,7 +15,7 @@ public class Program {
         final FSM fsm = initModel();
 
         new ExecutableEGFSMAlgebra() {
-        }.$(fsm).execute(Arrays.asList("a", "b", "a"));
+        }.$(fsm).execute(Arrays.asList("a", "b", "a", "b"));
 
         System.out.println(fsm.getCurrentState().getName());
     }

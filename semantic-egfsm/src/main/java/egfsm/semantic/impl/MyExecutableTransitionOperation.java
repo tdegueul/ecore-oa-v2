@@ -5,7 +5,7 @@ import egfsm.semantic.algebra.EGFSMAlgebra;
 import egfsm.semantic.operation.ExecutableFSMOperation;
 import egfsm.semantic.operation.ExecutableStateOperation;
 import egfsm.semantic.operation.ExecutableTransitionOperation;
-import egfsm.syntax.Transition;
+import syntax.gfsm.Transition;
 
 /**
  * Created by mleduc on 14/03/17.

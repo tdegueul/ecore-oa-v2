@@ -1,6 +1,6 @@
 package efsm.semantic.operation;
 
-import fsm.Transition;
+import syntax.fsm.Transition;
 
 import java.util.List;
 

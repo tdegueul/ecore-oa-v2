@@ -1,4 +1,4 @@
-package fsm;
+package syntax.fsm;
 
 import java.util.ArrayList;
 import java.util.List;

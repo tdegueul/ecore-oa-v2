@@ -1,9 +1,8 @@
 package efsm.semantic.impl;
 
 import efsm.semantic.algebra.EFSMAlgebra;
-import efsm.semantic.operation.*;
 import efsm.semantic.operation.ExecuteStateOperation;
-import fsm.Transition;
+import syntax.fsm.Transition;
 
 /**
  * Created by mleduc on 14/03/17.

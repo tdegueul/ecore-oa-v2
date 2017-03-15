@@ -5,8 +5,8 @@ import efsm.semantic.impl.ExecuteStateOperation;
 import egfsm.semantic.operation.ExecutableFSMOperation;
 import egfsm.semantic.operation.ExecutableStateOperation;
 import egfsm.semantic.operation.ExecutableTransitionOperation;
-import fsm.State;
-import fsm.Transition;
+import syntax.fsm.State;
+import syntax.fsm.Transition;
 
 import java.util.List;
 import java.util.stream.Collectors;

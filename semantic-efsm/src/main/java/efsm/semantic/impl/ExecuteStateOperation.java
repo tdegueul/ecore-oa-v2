@@ -1,9 +1,8 @@
 package efsm.semantic.impl;
 
 import efsm.semantic.algebra.EFSMAlgebra;
-import efsm.semantic.operation.*;
-import fsm.State;
-import fsm.Transition;
+import syntax.fsm.State;
+import syntax.fsm.Transition;
 
 import java.util.List;
 import java.util.Objects;

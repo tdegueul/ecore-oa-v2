@@ -1,4 +1,4 @@
-package fsm;
+package syntax.fsm;
 
 /**
  * Created by mleduc on 13/03/17.

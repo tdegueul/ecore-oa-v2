@@ -1,11 +1,11 @@
 package syntax.efsm;
 
-import fsm.State;
+import syntax.fsm.State;
 
 /**
  * Created by mleduc on 13/03/17.
  */
-public class FSM extends fsm.FSM {
+public class FSM extends syntax.fsm.FSM {
     private State currentState;
 
 

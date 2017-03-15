@@ -17,6 +17,8 @@
         <module>syntax-gfsm</module>
         <module>syntax-egfsm</module>
         <module>semantic-egfsm</module>
+        <module>syntax-expression</module>
+        <module>semantic-expression</module>
     </modules>
 
     <build>

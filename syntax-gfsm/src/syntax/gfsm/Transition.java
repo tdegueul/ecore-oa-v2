@@ -3,7 +3,7 @@ package syntax.gfsm;
 /**
  * Created by mleduc on 13/03/17.
  */
-public class Transition extends fsm.Transition {
+public class Transition extends syntax.fsm.Transition {
     private boolean guard;
 
     public boolean isGuard() {

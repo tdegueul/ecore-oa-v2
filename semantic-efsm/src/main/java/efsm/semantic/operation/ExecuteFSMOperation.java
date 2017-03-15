@@ -1,6 +1,6 @@
 package efsm.semantic.operation;
 
-import fsm.State;
+import syntax.fsm.State;
 
 import java.util.List;
 

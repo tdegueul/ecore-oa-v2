@@ -5,7 +5,7 @@ import egfsm.semantic.algebra.EGFSMAlgebra;
 import egfsm.semantic.operation.ExecutableFSMOperation;
 import egfsm.semantic.operation.ExecutableStateOperation;
 import egfsm.semantic.operation.ExecutableTransitionOperation;
-import fsm.State;
+import syntax.fsm.State;
 import syntax.efsm.FSM;
 
 import java.util.List;

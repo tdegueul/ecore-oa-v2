@@ -3,8 +3,8 @@ package efsm.semantic.impl;
 import efsm.semantic.algebra.EFSMAlgebra;
 import efsm.semantic.operation.ExecuteStateOperation;
 import efsm.semantic.operation.ExecuteTransitionOperation;
-import fsm.State;
-import fsm.Transition;
+import syntax.fsm.State;
+import syntax.fsm.Transition;
 import syntax.efsm.FSM;
 
 import java.util.List;

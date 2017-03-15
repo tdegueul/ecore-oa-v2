@@ -4,8 +4,7 @@ import egfsm.semantic.algebra.EGFSMAlgebra;
 import egfsm.semantic.operation.ExecutableFSMOperation;
 import egfsm.semantic.operation.ExecutableStateOperation;
 import egfsm.semantic.operation.ExecutableTransitionOperation;
-import egfsm.syntax.Transition;
-import fsm.State;
+import syntax.fsm.State;
 
 /**
  * Created by mleduc on 13/03/17.
@@ -14,7 +13,7 @@ public interface ExecutableEGFSMAlgebra extends EGFSMAlgebra<ExecutableFSMOperat
 
 
     @Override
-    default ExecutableTransitionOperation transition(Transition transition) {
+    default ExecutableTransitionOperation transition(syntax.gfsm.Transition transition) {
         return new MyExecutableTransitionOperation(transition, this);
     }
 
@@ -29,7 +28,7 @@ public interface ExecutableEGFSMAlgebra extends EGFSMAlgebra<ExecutableFSMOperat
     }
 
     @Override
-    default ExecutableTransitionOperation transition(fsm.Transition transition) {
+    default ExecutableTransitionOperation transition(syntax.fsm.Transition transition) {
         return new My2ExecutableTransitionOperation(transition, this);
     }
 
