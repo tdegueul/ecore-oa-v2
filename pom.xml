@@ -19,6 +19,8 @@
         <module>semantic-egfsm</module>
         <module>syntax-expression</module>
         <module>semantic-expression</module>
+        <module>semanticprintexpression</module>
+        <module>semanticprinteval</module>
     </modules>
 
     <build>

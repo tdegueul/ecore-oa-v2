@@ -5,8 +5,10 @@ import egfsm.semantic.algebra.EGFSMAlgebra;
 import egfsm.semantic.operation.ExecutableFSMOperation;
 import egfsm.semantic.operation.ExecutableStateOperation;
 import egfsm.semantic.operation.ExecutableTransitionOperation;
-import syntax.fsm.State;
+import expression.semantic.operation.EqualOperation;
+import expression.semantic.operation.ExpressionOperation;
 import syntax.efsm.FSM;
+import syntax.fsm.State;
 
 import java.util.List;
 
@@ -15,10 +17,10 @@ import java.util.List;
  */
 public class My2ExecutableFSMOperation implements ExecutableFSMOperation {
     private final FSM fsm;
-    private final EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation> algebra;
+    private final EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation, ? extends ExpressionOperation, ? extends EqualOperation> algebra;
     private final ExecuteFSMOperation delegate;
 
-    public My2ExecutableFSMOperation(FSM fsm, EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation> algebra) {
+    public My2ExecutableFSMOperation(FSM fsm, EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation, ? extends ExpressionOperation, ? extends EqualOperation> algebra) {
         this.fsm = fsm;
         this.algebra = algebra;
         delegate = new ExecuteFSMOperation(fsm, algebra);

@@ -5,6 +5,8 @@ import egfsm.semantic.algebra.EGFSMAlgebra;
 import egfsm.semantic.operation.ExecutableFSMOperation;
 import egfsm.semantic.operation.ExecutableStateOperation;
 import egfsm.semantic.operation.ExecutableTransitionOperation;
+import expression.semantic.operation.EqualOperation;
+import expression.semantic.operation.ExpressionOperation;
 import syntax.fsm.Transition;
 
 /**
@@ -12,10 +14,10 @@ import syntax.fsm.Transition;
  */
 public class My2ExecutableTransitionOperation implements ExecutableTransitionOperation {
     private final Transition transition;
-    private final EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation> algebra;
+    private final EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation, ? extends ExpressionOperation, ? extends EqualOperation> algebra;
     private ExecuteTransitionOperation delegate;
 
-    public My2ExecutableTransitionOperation(Transition transition, EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation> algebra) {
+    public My2ExecutableTransitionOperation(Transition transition, EGFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation, ? extends ExpressionOperation, ? extends EqualOperation> algebra) {
         this.transition = transition;
         this.algebra = algebra;
         this.delegate = new ExecuteTransitionOperation(transition, algebra);

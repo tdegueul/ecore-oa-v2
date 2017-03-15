@@ -1,16 +1,18 @@
 package syntax.gfsm;
 
+import syntax.expression.Equal;
+
 /**
  * Created by mleduc on 13/03/17.
  */
 public class Transition extends syntax.fsm.Transition {
-    private boolean guard;
+    private Equal guard;
 
-    public boolean isGuard() {
+    public Equal isGuard() {
         return guard;
     }
 
-    public void setGuard(boolean guard) {
+    public void setGuard(Equal guard) {
         this.guard = guard;
     }
 }
