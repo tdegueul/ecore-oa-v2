@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>efsm.semantic.algebra.EFSMAlgebra</OriginalElement>
+  <nodes>
+    <node x="433.37499999999994" y="556.0">efsm.semantic.impl.ExecutableEFSMAlgebra</node>
+    <node x="645.6916666666666" y="379.5">efsm.semantic.impl.ExecuteStateOperation</node>
+    <node x="261.99999999999994" y="78.0">efsm.semantic.operation.ExecuteTransitionOperation</node>
+    <node x="526.625" y="78.0">efsm.semantic.operation.ExecuteStateOperation</node>
+    <node x="820.625" y="0.0">efsm.semantic.algebra.EFSMAlgebra</node>
+    <node x="375.9166666666666" y="379.5">efsm.semantic.impl.ExecuteTransitionOperation</node>
+    <node x="123.06388888888881" y="366.0">efsm.semantic.impl.ExecuteFSMOperation</node>
+    <node x="0.0" y="64.5">efsm.semantic.operation.ExecuteFSMOperation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="efsm.semantic.impl.ExecutableEFSMAlgebra" target="efsm.semantic.impl.ExecuteFSMOperation">
+      <point x="-115.125" y="-56.0" />
+      <point x="471.74999999999994" y="536.0" />
+      <point x="212.5638888888888" y="536.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteFSMOperation" target="efsm.semantic.operation.ExecuteTransitionOperation">
+      <point x="0.0" y="-70.0" />
+      <point x="212.5638888888888" y="296.0" />
+      <point x="288.49999999999994" y="296.0" />
+      <point x="-79.5" y="30.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteTransitionOperation" target="efsm.semantic.operation.ExecuteTransitionOperation">
+      <point x="-44.19999999999999" y="-56.5" />
+      <point x="442.2166666666666" y="276.0" />
+      <point x="341.49999999999994" y="276.0" />
+      <point x="-26.5" y="30.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteTransitionOperation" target="efsm.semantic.operation.ExecuteStateOperation">
+      <point x="44.200000000000045" y="-56.5" />
+      <point x="530.6166666666666" y="316.0" />
+      <point x="629.375" y="316.0" />
+      <point x="-34.25" y="30.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecutableEFSMAlgebra" target="efsm.semantic.impl.ExecuteStateOperation">
+      <point x="38.375" y="-56.0" />
+      <point x="625.25" y="526.0" />
+      <point x="737.1916666666666" y="526.0" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteTransitionOperation" target="efsm.semantic.operation.ExecuteFSMOperation">
+      <point x="-88.39999999999998" y="-56.5" />
+      <point x="398.0166666666666" y="286.0" />
+      <point x="151.25" y="286.0" />
+      <point x="30.25" y="43.5" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteFSMOperation" target="efsm.semantic.operation.ExecuteFSMOperation">
+      <point x="-35.80000000000001" y="-70.0" />
+      <point x="176.7638888888888" y="336.0" />
+      <point x="90.75" y="336.0" />
+      <point x="-30.25" y="43.5" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecutableEFSMAlgebra" target="efsm.semantic.impl.ExecuteTransitionOperation">
+      <point x="-38.375" y="-56.0" />
+      <point x="548.5" y="536.0" />
+      <point x="486.4166666666666" y="536.0" />
+      <point x="0.0" y="56.5" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteStateOperation" target="efsm.semantic.operation.ExecuteTransitionOperation">
+      <point x="-36.59999999999991" y="-56.5" />
+      <point x="700.5916666666667" y="246.0" />
+      <point x="447.49999999999994" y="246.0" />
+      <point x="79.5" y="30.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteFSMOperation" target="efsm.semantic.operation.ExecuteStateOperation">
+      <point x="35.80000000000001" y="-70.0" />
+      <point x="248.36388888888882" y="306.0" />
+      <point x="560.875" y="306.0" />
+      <point x="-102.75" y="30.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecutableEFSMAlgebra" target="efsm.semantic.algebra.EFSMAlgebra">
+      <point x="115.125" y="-56.0" />
+      <point x="702.0" y="536.0" />
+      <point x="1004.9416666666666" y="536.0" />
+      <point x="1004.9416666666666" y="346.0" />
+      <point x="1065.625" y="346.0" />
+      <point x="105.0" y="108.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteStateOperation" target="efsm.semantic.algebra.EFSMAlgebra">
+      <point x="73.20000000000005" y="-56.5" />
+      <point x="810.3916666666667" y="346.0" />
+      <point x="995.625" y="346.0" />
+      <point x="35.0" y="108.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteStateOperation" target="efsm.semantic.operation.ExecuteFSMOperation">
+      <point x="-73.19999999999993" y="-56.5" />
+      <point x="663.9916666666667" y="256.0" />
+      <point x="211.75" y="256.0" />
+      <point x="90.75" y="43.5" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteTransitionOperation" target="efsm.semantic.algebra.EFSMAlgebra">
+      <point x="88.39999999999998" y="-56.5" />
+      <point x="574.8166666666666" y="336.0" />
+      <point x="925.625" y="336.0" />
+      <point x="-35.0" y="108.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteStateOperation" target="efsm.semantic.operation.ExecuteStateOperation">
+      <point x="0.0" y="-56.5" />
+      <point x="737.1916666666666" y="236.0" />
+      <point x="697.875" y="236.0" />
+      <point x="34.25" y="30.0" />
+    </edge>
+    <edge source="efsm.semantic.impl.ExecuteFSMOperation" target="efsm.semantic.algebra.EFSMAlgebra">
+      <point x="71.59999999999997" y="-70.0" />
+      <point x="284.1638888888888" y="326.0" />
+      <point x="855.625" y="326.0" />
+      <point x="-105.0" y="108.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="550.5" y="334.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
