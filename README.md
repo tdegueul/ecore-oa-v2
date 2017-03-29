@@ -21,7 +21,7 @@
 
 When creating a *concrete algebra* an **Operation** interface is defined for each abstract type in the *abstract algebra*.
 
-The Operation interfaces are defined for each non `$` methods declared in the abstract algebra ([link to an example](https://github.com/manuelleduc/ecore-oa-v2/blob/master/semantic-efsm/src/main/java/efsm/semantic/impl/ExecutableEFSMAlgebra.java#L22)).
+The Operation implToIntf are defined for each non `$` methods declared in the abstract algebra ([link to an example](https://github.com/manuelleduc/ecore-oa-v2/blob/master/semantic-efsm/src/main/java/efsm/semantic/impl/ExecutableEFSMAlgebra.java#L22)).
 
 When an implementation of a part of the semantic has to access to an operation or an attribute which might not be defined for some elements ([link to an example](https://github.com/manuelleduc/ecore-oa-v2/blob/master/semantic-efsm/src/main/java/efsm/semantic/impl/ExecutableEFSMAlgebra.java#L104)) an operation has to be added to the Operation interface of the manipulated model's element.
 

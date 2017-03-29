@@ -26,6 +26,11 @@
         <module>semantic-multiple-inheritance</module>
         <module>annotation-processor</module>
         <module>applicationprocessortarget</module>
+        <module>syntaxepyramidlevel0</module>
+        <module>syntaxepyramidlevel1</module>
+        <module>syntaxepyramidlevel2</module>
+        <module>semanticpyramid0</module>
+        <module>testproxy</module>
     </modules>
 
     <build>
