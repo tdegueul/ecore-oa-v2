@@ -21,6 +21,11 @@
         <module>semantic-expression</module>
         <module>semanticprintexpression</module>
         <module>semanticprinteval</module>
+        <module>visitortest</module>
+        <module>syntax-multiple-inheritance</module>
+        <module>semantic-multiple-inheritance</module>
+        <module>annotation-processor</module>
+        <module>applicationprocessortarget</module>
     </modules>
 
     <build>

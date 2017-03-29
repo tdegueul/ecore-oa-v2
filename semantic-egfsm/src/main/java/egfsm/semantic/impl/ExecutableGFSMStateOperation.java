@@ -14,14 +14,14 @@ import java.util.stream.Collectors;
 /**
  * Created by mleduc on 14/03/17.
  */
-public class MyExecutableStateOperation implements ExecutableStateOperation {
+public class ExecutableGFSMStateOperation implements ExecutableStateOperation {
 
     private final EFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation> algebra;
     private final State state;
 
     private final ExecuteStateOperation delegate;
 
-    public MyExecutableStateOperation(State state, EFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation> algebra) {
+    public ExecutableGFSMStateOperation(State state, EFSMAlgebra<? extends ExecutableFSMOperation, ? extends ExecutableStateOperation, ? extends ExecutableTransitionOperation> algebra) {
         this.state = state;
         this.algebra = algebra;
         delegate = new ExecuteStateOperation(state, algebra);

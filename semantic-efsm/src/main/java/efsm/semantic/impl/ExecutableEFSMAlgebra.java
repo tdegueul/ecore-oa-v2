@@ -11,7 +11,8 @@ import syntax.efsm.FSM;
 /**
  * Created by mleduc on 13/03/17.
  */
-public interface ExecutableEFSMAlgebra extends EFSMAlgebra<ExecuteFSMOperation, ExecuteStateOperation, ExecuteTransitionOperation> {
+public interface ExecutableEFSMAlgebra
+        extends EFSMAlgebra<ExecuteFSMOperation, ExecuteStateOperation, ExecuteTransitionOperation> {
 
     @Override
     default efsm.semantic.impl.ExecuteFSMOperation fsm(FSM fsm) {

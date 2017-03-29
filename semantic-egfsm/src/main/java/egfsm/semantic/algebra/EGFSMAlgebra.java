@@ -6,7 +6,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 /**
  * Created by mleduc on 13/03/17.
  */
-public interface EGFSMAlgebra<TFSM, TState, TTransition, TExpression, TEqual> extends efsm.semantic.algebra.EFSMAlgebra<TFSM, TState, TTransition>, expression.semantic.algebra.ExpressionAlgebra<TExpression, TEqual> {
+public interface EGFSMAlgebra<TFSM, TState, TTransition> extends efsm.semantic.algebra.EFSMAlgebra<TFSM, TState, TTransition> {
     default TTransition transition(syntax.gfsm.Transition transition) {
         throw new NotImplementedException();
     }
