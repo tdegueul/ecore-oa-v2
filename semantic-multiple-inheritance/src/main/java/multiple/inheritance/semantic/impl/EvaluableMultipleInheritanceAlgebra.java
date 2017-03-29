@@ -1,6 +1,6 @@
 package multiple.inheritance.semantic.impl;
 
-import multiple.inheritance.semantic.algebra.MultipleInheritanceAlgebra;
+import multiple.inheritance.semantic.algebra.MultipleInheritanceAlgebraC;
 import multiple.inheritance.semantic.operation.OperationA;
 import multiple.inheritance.semantic.operation.OperationB;
 import multiple.inheritance.semantic.operation.OperationC;
@@ -11,7 +11,7 @@ import syntax.multiple.inheritance.C;
 /**
  * Created by mleduc on 29/03/17.
  */
-public interface EvaluableMultipleInheritanceAlgebra extends MultipleInheritanceAlgebra<OperationA, OperationB, OperationC> {
+public interface EvaluableMultipleInheritanceAlgebra extends MultipleInheritanceAlgebraC<OperationA, OperationB, OperationC> {
     @Override
     default OperationA a(A a) {
         return new OperationAImpl(a, this);

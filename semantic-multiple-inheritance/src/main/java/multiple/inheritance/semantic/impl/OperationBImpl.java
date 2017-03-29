@@ -1,6 +1,6 @@
 package multiple.inheritance.semantic.impl;
 
-import multiple.inheritance.semantic.algebra.MultipleInheritanceAlgebra;
+import multiple.inheritance.semantic.algebra.MultipleInheritanceAlgebraC;
 import multiple.inheritance.semantic.operation.OperationA;
 import multiple.inheritance.semantic.operation.OperationB;
 import multiple.inheritance.semantic.operation.OperationC;
@@ -12,9 +12,9 @@ import syntax.multiple.inheritance.B;
 public class OperationBImpl implements OperationB {
 
     private final B b;
-    private final MultipleInheritanceAlgebra<? extends OperationA, ? extends OperationB, ? extends OperationC> algebra;
+    private final MultipleInheritanceAlgebraC<? extends OperationA, ? extends OperationB, ? extends OperationC> algebra;
 
-    OperationBImpl(B b, MultipleInheritanceAlgebra<? extends OperationA, ? extends OperationB, ? extends OperationC> algebra) {
+    OperationBImpl(B b, MultipleInheritanceAlgebraC<? extends OperationA, ? extends OperationB, ? extends OperationC> algebra) {
         this.b = b;
         this.algebra = algebra;
     }

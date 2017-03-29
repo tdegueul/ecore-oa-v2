@@ -51,7 +51,7 @@ interface MultipleInheritanceAlgebraB<BT> {
 
 
 // one abstract type by class in the metamodel
-public interface MultipleInheritanceAlgebra<AT, BT, CT> extends MultipleInheritanceAlgebraA<AT>, MultipleInheritanceAlgebraB<BT> {
+public interface MultipleInheritanceAlgebraC<AT, BT, CT> extends MultipleInheritanceAlgebraA<AT>, MultipleInheritanceAlgebraB<BT> {
 
     // one method by concrete class
     CT c(C c);
