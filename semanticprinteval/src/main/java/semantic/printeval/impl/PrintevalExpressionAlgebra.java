@@ -1,7 +1,6 @@
 package semantic.printeval.impl;
 
 import expression.semantic.impl.EvaluableExpressionAlgebra;
-import javafx.util.Pair;
 import semantic.print.impl.PrintableExpressionAlgebra;
 import semantic.printeval.algebra.ExpressionAlgebra;
 import semantic.printeval.operation.EqualOperation;

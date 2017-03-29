@@ -1,7 +1,5 @@
 package semantic.printeval.operation;
 
-import javafx.util.Pair;
-
 /**
  * Created by mleduc on 15/03/17.
  */
