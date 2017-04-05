@@ -4,18 +4,9 @@ package semantic.print.algebra;
  * Created by mleduc on 15/03/17.
  */
 public interface ExpressionAlgebra<TExpression, TEqual> {
-    default TExpression constant(syntax.expression.Constant constant) {
-        throw new UnsupportedOperationException();
-    }
-
-    default TExpression sum(syntax.expression.Sum sum) {
-        throw new UnsupportedOperationException();
-    }
-
-
-    default TEqual equal(syntax.expression.Equal equal) {
-        throw new UnsupportedOperationException();
-    }
+    TExpression constant(syntax.expression.Constant constant);
+    TExpression sum(syntax.expression.Sum sum);
+    TEqual equal(syntax.expression.Equal equal);
 
     default TExpression $(syntax.expression.Expression expression) {
         if (expression instanceof syntax.expression.Constant) {

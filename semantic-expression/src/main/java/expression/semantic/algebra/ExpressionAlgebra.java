@@ -9,15 +9,9 @@ import syntax.expression.Sum;
  * Created by mleduc on 15/03/17.
  */
 public interface ExpressionAlgebra<TExpression, TEqual> {
-    default TExpression constant(Constant constant) {
-        throw new UnsupportedOperationException();
-    }
-
-    default TExpression sum(Sum sum) {
-        throw new UnsupportedOperationException();
-    }
-
-    default TEqual equal(Equal equal) { throw new UnsupportedOperationException(); }
+    TExpression constant(Constant constant);
+    TExpression sum(Sum sum);
+    TEqual equal(Equal equal);
 
     default TExpression $(Expression expression) {
         if (expression instanceof Constant) {

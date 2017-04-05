@@ -1,6 +1,7 @@
 package egfsm.semantic;
 
 import egfsm.semantic.impl.ExecutableEGFSMAlgebra;
+import egfsm.semantic.operation.ExecutableFSMOperation;
 import syntax.efsm.FSM;
 import syntax.fsm.State;
 import syntax.gfsm.Transition;

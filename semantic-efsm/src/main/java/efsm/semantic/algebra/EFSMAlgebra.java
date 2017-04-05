@@ -8,22 +8,10 @@ import syntax.fsm.Transition;
  * Created by mleduc on 13/03/17.
  */
 public interface EFSMAlgebra<TFSM, TState, TTransition> {
-
-    default TFSM fsm(syntax.fsm.FSM fsm) {
-        throw new UnsupportedOperationException();
-    }
-
-    default TFSM fsm(FSM fsm) {
-        throw new UnsupportedOperationException();
-    }
-
-    default TState state(State state) {
-        throw new UnsupportedOperationException();
-    }
-
-    default TTransition transition(Transition transition) {
-        throw new UnsupportedOperationException();
-    }
+    TFSM fsm(syntax.fsm.FSM fsm);
+    TFSM fsm(FSM fsm);
+    TState state(State state);
+    TTransition transition(Transition transition);
 
     default TFSM $(syntax.fsm.FSM fsm) {
         if (fsm instanceof syntax.efsm.FSM) {

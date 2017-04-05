@@ -4,6 +4,7 @@ import egfsm.semantic.algebra.EGFSMAlgebra;
 import egfsm.semantic.operation.ExecutableFSMOperation;
 import egfsm.semantic.operation.ExecutableStateOperation;
 import egfsm.semantic.operation.ExecutableTransitionOperation;
+import syntax.fsm.FSM;
 import syntax.fsm.State;
 
 /**
@@ -20,6 +21,12 @@ public interface ExecutableEGFSMAlgebra extends EGFSMAlgebra<ExecutableFSMOperat
     @Override
     default ExecutableFSMOperation fsm(syntax.efsm.FSM fsm) {
         return new ExecutableGFSMFSMOperation(fsm, this);
+    }
+    
+    @Override
+    default ExecutableFSMOperation fsm(FSM fsm) {
+        // FIXME
+    	throw new UnsupportedOperationException();
     }
 
     @Override
